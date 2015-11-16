@@ -7,12 +7,14 @@ class Monster
   PVector _acceleration;
   float _topSpeed;
   Player _target;
+  float _chargeDist;
   
   Monster()
   {
     _pos = new PVector(10, 10);
     _velocity = new PVector(0,0);
     _topSpeed = .25;
+    _chargeDist = 200;
     
   }
   
@@ -36,11 +38,31 @@ class Monster
     {
       dir= PVector.sub(p1Pos,_pos);
       _target = p1;
+      
+      
+      if(p1Dist < _chargeDist)
+      {
+        _topSpeed = 1;
+      }
+      else
+      {
+        _topSpeed =.25;
+      }
     }
     else
     {
       dir= PVector.sub(p2Pos,_pos);
       _target = p2;
+      
+      if(p2Dist < _chargeDist)
+      {
+        _topSpeed = 1;
+      }
+      else
+      {
+        _topSpeed =.25;
+      }
+      
     }
     
     

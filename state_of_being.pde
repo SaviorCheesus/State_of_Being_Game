@@ -35,6 +35,7 @@ void draw()
   
   p2.Update();
   p2.Draw();
-  m.Update(p1,p2);
+  
   light.Update();
+  m.Update(p1,p2);
 }	
