@@ -17,7 +17,7 @@
   </ul>
 </div>
 
-<div>
+<p>
   <h3>Milestone #2: November 30th, 2015 </h3>
   <strong>Goal:</strong> You should have a small prototype by the end of this milestone.
   <ul>
@@ -26,7 +26,7 @@
     <li>Create Monster Class  : John</li>
     <li>Finish a prototype    : All</li>
   </ul>
-</div>
+</p>
 
 <div>
   <h3>Milestone #3: December 7th, 2015 (For C block)</br>
