@@ -12,7 +12,7 @@ class Lighting
     _light.loadPixels();
     for (int i = 0; i < _light.pixels.length; i++)
     {
-      _light.pixels[i] = color(0,0,0,100);
+      _light.pixels[i] = color(0,0,0,255);
     }
     _light.updatePixels();
   }
@@ -29,10 +29,15 @@ class Lighting
     image(_light,0,0);
   }
   
-  private void drawTorchAt(float x, float y, int w)
+  private void drawTorchAt(float x, float y, int r)
   {
-
-    
+     int start = int ( ((y-r) * width ) + (x-r) );
+     int end =   int ( ((y+r) * width ) + (x+r) );
+     
+     for ( int i = start; i < end; i++)
+     {
+       _light.pixels[i] = color ( 255, 255, 255 );
+     }
   }
   
 }
