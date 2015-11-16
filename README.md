@@ -13,7 +13,7 @@ Goal: You should have solid planning done by the end of this milestone.
   <li>Create Lighting Class : Linus</li>
   <li>Create Monster Class  : John</li>
   <li>Create Monster AI     : John</li>
-<ul>
+</ul>
 
 <h3> Milestone #2: November 30th, 2015 </h3>
 Goal: You should have a small prototype by the end of this milestone.
@@ -22,7 +22,7 @@ Goal: You should have a small prototype by the end of this milestone.
   <li>Create Lighting Class : Linus</li>
   <li>Create Monster Class  : John</li>
   <li>Finish a prototype    : All</li>
-<ul>
+</ul>
 
 <h3> Milestone #3: December 7th, 2015 (For C block) </h3>
 <h3> Milestone #3: December 8th, 2015 (For G block) </h3>
@@ -32,4 +32,4 @@ Goal: You should have iterated and improved on your prototype by the end of this
   <li>Create Lighting Class : Linus</li>
   <li>Create Monster Class  : John</li>
   <li>Create Monster AI     : John</li>
-<ul>
+</ul>
