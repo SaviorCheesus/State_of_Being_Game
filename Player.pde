@@ -25,6 +25,16 @@ class Player
   
   public void Update()
   {
-    
+    Move();
   }
+  
+  public void Draw()
+  {
+    image(_sprite, _x, _y);
+  }
+  
+  public float GetX() { return _x; }
+  public float GetY() { return _y; }
+  public void SetX(float x) { _x = x; }
+  public void SetY(float y) { _y = y; }
 }
