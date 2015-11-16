@@ -2,42 +2,43 @@ class Monster
 {
   
   
-  PVector location;
-  PVector velocity;
-  PVector acceleration;
-  float topSpeed;
-  PVector target;
+  PVector _pos;
+  PVector _velocity;
+  PVector _acceleration;
+  float _topSpeed;
+  PVector _target;
   
   Monster()
   {
-    location = new PVector(width/2, height/2);
-    velocity = new PVector(0,0);
-    topSpeed = .25;
-    target = new PVector(mouseX, mouseY);
+    _pos = new PVector(width/2, height/2);
+    _velocity = new PVector(0,0);
+    _topSpeed = .25;
+    _target = new PVector(mouseX, mouseY);
     
   }
   
   void Draw()
   {
     fill(150,0,0);
-    ellipse(location.x, location.y, 10, 10);
+    ellipse(_pos.x, _pos.y, 10, 10);
   }
   
   void Hunt()
   {
     PVector mouse = new PVector(mouseX,mouseY);
 
-    PVector dir = PVector.sub(mouse,location);
+
+    PVector dir = PVector.sub(mouse,_pos);
     dir.normalize();
     dir.mult(2);
-    acceleration = dir;
+    _acceleration = dir;
   }
   void Move()
   {
     Hunt();
-    velocity.add(acceleration);
-    velocity.limit(topSpeed);
-    location.add(velocity);
+    _velocity.add(_acceleration);
+    _velocity.limit(_topSpeed);
+    _pos.add(_velocity);
   }
   void Update()
   {
