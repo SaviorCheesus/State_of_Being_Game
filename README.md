@@ -10,10 +10,11 @@
   <h3>Milestone #1: November 20th, 2015 </h3>
   <strong>Goal:</strong> You should have solid planning done by the end of this milestone.
   <ul>
-    <li>Create Player Class   : Linus</li>
-    <li>Create Lighting Class : Linus</li>
-    <li>Create Monster Class  : John</li>
-    <li>Create Monster AI     : John</li>
+    <li>Create Player Class    : Linus</li>
+    <li>Create Player Movement : Linus</li>
+    <li>Create Lighting Class  : Linus</li>
+    <li>Create Monster Class   : John</li>
+    <li>Create Monster AI      : John</li>
   </ul>
 </div>
 
@@ -21,10 +22,11 @@
   <h3>Milestone #2: November 30th, 2015 </h3>
   <strong>Goal:</strong> You should have a small prototype by the end of this milestone.
   <ul>
-    <li>Make Lighting Behavior   : Linus</li>
-    <li>Create Lighting Class : Linus</li>
-    <li>Create Monster Class  : John</li>
-    <li>Finish a prototype    : All</li>
+    <li>Make Lighting Behavior    : Linus</li>
+    <li>Make Player Push Behavior : Linus </li>
+    <li>Create Win Condition      : John</li>
+    <li>Finish a prototype        : All</li>
+    <li>Playtest                  : All</li>
   </ul>
 </p>
 
@@ -33,9 +35,7 @@
   Milestone #3: December 8th, 2015 (For G block) </h3>
   <strong>Goal:</strong> You should have iterated and improved on your prototype by the end of this milestone.
   <ul>
-    <li>Create Player Class   : Linus</li>
-    <li>Create Lighting Class : Linus</li>
-    <li>Create Monster Class  : John</li>
-    <li>Create Monster AI     : John</li>
+    <li>Gather Feedback from players  : All</li>
+    <li>Make Changes and tweak based on feedback : Linus</li>
   </ul>
 </div>
