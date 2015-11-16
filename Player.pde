@@ -15,11 +15,47 @@ class Player
   {
     if (controlScheme == 0)
     {
-      
+      if (keyPressed)
+      {
+        if ( key == 'w')
+        {
+          _y--;
+        }
+        else if ( key == 's')
+        {
+          _y++;
+        }
+        else if ( key == 'a')
+        {
+          _x--;
+        }
+        else if ( key == 'd')
+        {
+          _x++;
+        }
+      }
     }
     else if (controlScheme == 1)
     {
-      
+      if (keyPressed)
+      {
+        if ( key == 'i')
+        {
+          _y--;
+        }
+        else if ( key == 'k')
+        {
+          _y++;
+        }
+        else if ( key == 'j')
+        {
+          _x--;
+        }
+        else if ( key == 'l')
+        {
+          _x++;
+        }
+      }      
     }
   }
   
@@ -30,6 +66,7 @@ class Player
   
   public void Draw()
   {
+    imageMode(CENTER);
     image(_sprite, _x, _y);
   }
   
