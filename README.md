@@ -7,7 +7,7 @@
 <h2>Timeline</h2>
 
 <div>
-  <h3> Milestone #1: November 20th, 2015 </h3>
+  <h3>Milestone #1: November 20th, 2015 </h3>
   <strong>Goal:</strong> You should have solid planning done by the end of this milestone.
   <ul>
     <li>Create Player Class   : Linus</li>
@@ -18,7 +18,7 @@
 </div>
 
 <div>
-  <h3> Milestone #2: November 30th, 2015 </h3>
+  <h3>Milestone #2: November 30th, 2015 </h3>
   <strong>Goal:</strong> You should have a small prototype by the end of this milestone.
   <ul>
     <li>Make Lighting Behavior   : Linus</li>
@@ -29,7 +29,7 @@
 </div>
 
 <div>
-  <h3> Milestone #3: December 7th, 2015 (For C block)
+  <h3>Milestone #3: December 7th, 2015 (For C block)</br>
   Milestone #3: December 8th, 2015 (For G block) </h3>
   <strong>Goal:</strong> You should have iterated and improved on your prototype by the end of this milestone.
   <ul>
