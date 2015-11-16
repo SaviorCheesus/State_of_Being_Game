@@ -37,5 +37,6 @@
   <ul>
     <li>Gather Feedback from players  : All</li>
     <li>Make Changes and tweak based on feedback : Linus</li>
+    <li>Prepare for Presentation</li>
   </ul>
 </div>
