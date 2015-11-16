@@ -2,7 +2,7 @@ Player p1;
 Player p2;
 Lighting light;
 PImage floor; 
-
+Monster m;
 void setup()
 {
   fullScreen();
@@ -10,7 +10,7 @@ void setup()
   p2 = new Player("player2.png",1);
   light = new Lighting(p1,p2);
   floor = loadImage("floor.jpg");
-  
+  m = new Monster();
   p1.SetX(width/2);
   p1.SetY(height/2);
   p2.SetX(width/2+100);
@@ -35,6 +35,6 @@ void draw()
   
   p2.Update();
   p2.Draw();
-  
+  m.Update(p1,p2);
   light.Update();
 }	

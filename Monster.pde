@@ -20,29 +20,39 @@ class Monster
   void Draw()
   {
     fill(150,0,0);
-    ellipse(_pos.x, _pos.y, 10, 10);
+    ellipse(_pos.x, _pos.y, 50, 50);
   }
   
-  void Hunt()
+  void Hunt(Player p1, Player p2)
   {
+    PVector dir;
     PVector mouse = new PVector(mouseX,mouseY);
-
-
-    PVector dir = PVector.sub(mouse,_pos);
+    PVector p1Pos = new PVector(p1.GetX(),p1.GetY());
+    PVector p2Pos = new PVector(p2.GetX(),p2.GetY());
+     
+    if(dist(p1Pos.x,p1Pos.y,_pos.x,_pos.y) < dist(p2Pos.x,p2Pos.y,_pos.x,_pos.y))
+    {
+      dir= PVector.sub(p1Pos,_pos);
+    }
+    else
+    {
+      dir= PVector.sub(p2Pos,_pos);
+    }
     dir.normalize();
     dir.mult(2);
     _acceleration = dir;
   }
-  void Move()
+  void Move(Player p1, Player p2)
   {
-    Hunt();
+    
+    Hunt(p1,p2);
     _velocity.add(_acceleration);
     _velocity.limit(_topSpeed);
     _pos.add(_velocity);
   }
-  void Update()
+  void Update(Player p1, Player p2)
   {
-    Move();
+    Move(p1,p2);
     Draw();
   }
   
